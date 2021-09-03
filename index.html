@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skeleton Loading Animation</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <div class="grid"></div>
+
+
+  <!-- The template element holds HTML that will not be rendered onto the page, but may be used with JavaScript to construct new html using the template as its basis. -->
+  <!-- The parser does process the contents of template while loading the page, only to ensure that those contents are valid.  -->
+  <template id="card-template">
+    <div class="card">
+      <div class="header">
+        <img class="header-img skeleton" src="https://source.unsplash.com/100x100?nature" >
+        <div class="title" data-title>
+          <div class="skeleton skeleton-text"></div>
+          <div class="skeleton skeleton-text"></div>
+        </div>
+      </div>
+      <div data-body>
+        <div class="skeleton skeleton-text"></div>
+        <div class="skeleton skeleton-text"></div>
+        <div class="skeleton skeleton-text"></div>
+        <div class="skeleton skeleton-text"></div>
+      </div>
+    </div>
+  </template>
+
+</body>
+</html>
